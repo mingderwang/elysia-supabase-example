@@ -31,5 +31,8 @@ const app = new Elysia()
     .listen(3000)
 
 console.log(
-    `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+    `🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`
+)
+console.log(
+    `👉 The Swagger API is running at http://${app.server?.hostname}:${app.server?.port}/swagger`
 )

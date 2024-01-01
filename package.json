@@ -4,7 +4,8 @@
   "scripts": {
     "test": "bun test",
     "start": "bun run src/index.ts",
-    "dev": "bun run --hot src/index.ts"
+    "dev": "bun run --hot src/index.ts",
+    "build": "bun-vercel src/index.ts"
   },
   "dependencies": {
     "@elysiajs/cookie": "^0.3.0",
@@ -13,7 +14,8 @@
     "elysia": "^0.3.1"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "bun-vercel": "^1.0.0-alpha.5"
   },
   "module": "src/index.js"
 }
